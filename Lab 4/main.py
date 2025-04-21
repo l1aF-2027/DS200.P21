@@ -1,8 +1,11 @@
 import threading
 from data_sender import start_data_server
 from data_receiver import start_streaming
+import warnings
+
 
 if __name__ == "__main__":
+    warnings.filterwarnings("ignore")
     server_thread = threading.Thread(target=start_data_server)
     streaming_thread = threading.Thread(target=start_streaming)
 

@@ -28,5 +28,3 @@ def start_data_server(host='localhost', port=9999):
                     print("⚠️ Client đã ngắt kết nối. Dừng server...")
                     return
 
-if __name__ == "__main__":
-    start_data_server()
